@@ -14,7 +14,7 @@ public class MainController {
 
     @GetMapping("/message")
     public String getMessage(@RequestParam("msg") String msg) {
-        return "This is the message " + msg;
+        return msg;
     }
 
     @GetMapping("/area")
