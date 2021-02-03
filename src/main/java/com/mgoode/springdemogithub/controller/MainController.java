@@ -21,4 +21,9 @@ public class MainController {
     public double calculateArea(@RequestParam("diameter") double diameter) {
         return Math.PI * diameter;
     }
+
+    @GetMapping("/add")
+    public double calculateArea(@RequestParam("a") int a, @RequestParam("b") int b) {
+        return a + b;
+    }
 }
