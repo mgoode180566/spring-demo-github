@@ -17,7 +17,7 @@ public class MainController {
         return "This is the message " + msg;
     }
 
-    @GetMapping("/message")
+    @GetMapping("/area")
     public double calculateArea(@RequestParam("diameter") double diameter) {
         return Math.PI * diameter;
     }
