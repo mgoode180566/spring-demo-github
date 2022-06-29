@@ -9,7 +9,7 @@ public class MainController {
 
     @GetMapping("/")
     public String getHome() {
-        return "this is home for today abc";
+        return "this is home for today";
     }
 
     @GetMapping("/message")
@@ -23,7 +23,7 @@ public class MainController {
     }
 
     @GetMapping("/add")
-    public int calculateArea(@RequestParam("a") int a, @RequestParam("b") int b) {
+    public int add(@RequestParam("a") int a, @RequestParam("b") int b) {
         return a + b;
     }
 }
